@@ -11,10 +11,9 @@ import javafx.stage.Stage;
 public class App extends Application{
 
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../resources/UI1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("UI1.fxml"));
 
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
 
         stage.setTitle("To-do list");
         stage.setScene(scene);

@@ -1,0 +1,82 @@
+@startuml
+'https://plantuml.com/class-diagram
+class App{
+main
+start
+}
+class toDoList{
+String Title()
+}
+class toDoListList{
+String Title()
+String DueDate()
+Boolean Complete()
+String Description()
+}
+class addItem{
+additem
+}
+class addTodoList{
+addtitle
+}
+class export{
+export
+}
+class import{
+import
+}
+class editItem{
+editItems
+}
+class editTodoList{
+edittitle
+}
+class FXMLController{
+todolist: ListofTodolists
+Itemtodolist: Listofitemsinatodolist
+
+newButtonClickedTDL()
+edidButtonClickedTDL()
+deleteButtonClickedTDL()
+addbuttonClicked()
+removeButtonClicked()
+editlistButtonClicked()
+displayAllbuttonClicked()
+checkboxClicked()
+displayincompleteButtonClicked()
+displaycompleteButtonClicked()
+exportlistButtonClicked()
+ExportalllistButtonClicked()
+importlistsButtonClicked()
+}
+
+class TodolistAddController{
+addTitleButtonClicked
+}
+class ListAddController{
+addListButtonClicked
+}
+
+javafx.Application <|-- App
+
+App - FXMLController
+FXMLController --|> TodolistAddController
+FXMLController --|> ListAddController
+TodolistAddController --|> addTodoList
+TodolistAddController <|-- addTodoList
+ListAddController --|> addItem
+ListAddController <|-- addItem
+addItem --|> toDoListList
+addTodoList --|> toDoList
+FXMLController --|> export
+FXMLController --|> import
+FXMLController <|-- import
+toDoListList --|> FXMLController
+toDoList --|> FXMLController
+editItem <|-- ListAddController
+editItem --|> toDoListList
+editTodoList <|-- TodolistAddController
+editTodoList --|> toDoList
+
+
+@enduml
