@@ -26,7 +26,7 @@ class FXMLControllerTest {
     @Test
     void deleteButtonClickedTDL() {
         // get current amount of numbers in the to do list
-        //click the button
+        //call the removetodolist class
         // remove a new item to the to do list
         //get new value of numbers in the to do list
         //assert that there is one less in the to do list
@@ -43,7 +43,7 @@ class FXMLControllerTest {
     @Test
     void removeButtonClicked() {
         //get the current amount of numbers of items in the list
-        //click the button
+        //call the removeitemlist class
         //remove an item to the list
         //get a new value of items
         //assert that there is one less in the items

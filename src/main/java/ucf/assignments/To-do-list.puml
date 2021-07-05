@@ -31,6 +31,10 @@ editItems
 class editTodoList{
 edittitle
 }
+class removeItemList{
+}
+class removeToDoList{
+}
 class FXMLController{
 todolist: ListofTodolists
 Itemtodolist: Listofitemsinatodolist
@@ -77,6 +81,12 @@ editItem <|-- ListAddController
 editItem --|> toDoListList
 editTodoList <|-- TodolistAddController
 editTodoList --|> toDoList
+FXMLController --|> removeToDoList
+removeToDoList --|> toDoList
+removeToDoList <|-- toDoList
+FXMLController --|> removeItemList
+removeItemList --|> toDoListList
+removeItemList <|-- toDoListList
 
 
 @enduml

@@ -8,5 +8,10 @@ class TodolistAddControllerTest {
 
     @Test
     void addTitleButtonClicked() {
+        // get current amount of numbers in the to do list
+        //call the addtodolist class
+        // add a new item to the to do list
+        //get new value of items in the to do list
+        //assert that there is one more in the to do list
     }
 }

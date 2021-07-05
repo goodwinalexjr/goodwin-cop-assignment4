@@ -34,7 +34,7 @@ public class FXMLController {
     }
 
     public void deleteButtonClickedTDL(ActionEvent actionEvent) {
-        //
+        //call the removetodolist class and remove function
     }
 
     public void addbuttonClicked(ActionEvent actionEvent) {
@@ -42,7 +42,7 @@ public class FXMLController {
     }
 
     public void removeButtonClicked(ActionEvent actionEvent) {
-        //
+        //call the removeitemlist class and remove function
     }
 
     public void editlistButtonClicked(ActionEvent actionEvent) {
